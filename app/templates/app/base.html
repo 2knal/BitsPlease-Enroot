@@ -29,7 +29,10 @@
                     <li class="">
                       <a class="" href="{% url 'app_home' %}">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    
+                    <li class="">
+                        <a class="" href="{% url 'profile'%}">Profile</a>
+                    </li>
+
                         {% if user.is_authenticated %}
                         <li class="">
                           <a class="" href="{% url 'logout' %}">Logout</a>
@@ -57,7 +60,15 @@
               </nav>
 
               <br>
+
     <div class="container">
+        {% if messages %}
+          {% for message in messages %}
+            <div class="alert alert-{{ message.tags }}">
+              {{ message }}
+            </div>
+          {% endfor %}
+        {% endif %}
         {% block content %}
         {% endblock content%}
     </div>
