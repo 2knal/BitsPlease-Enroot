@@ -3,15 +3,20 @@ import newspaper
 from newspaper import Article
 import os.path
 from Fake_News_Detection import prediction
+import views
 
-url = 'https://www.ndtv.com/business/petrol-price-on-october-20-petrol-diesel-prices-cut-for-third-straight-day-check-fuel-rates-here-1934766?News_Trending'
-
+# url = 'https://www.ndtv.com/business/petrol-price-on-october-20-petrol-diesel-prices-cut-for-third-straight-day-check-fuel-rates-here-1934766?News_Trending'
+with open('url.txt', 'r') as fp:
+    url = fp.read()
+# url = views.inp_value
+print(url)
 news = Article(url)
 try:
     news.download()
     news.parse()
     news.nlp()
 except Exception as e:
+    news.download()
     print(e)
     print("continuing...")
 
