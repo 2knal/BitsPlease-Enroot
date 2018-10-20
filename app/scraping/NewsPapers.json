@@ -1,0 +1,14 @@
+{
+	"dna": {
+		"link": "https://www.dnaindia.com/mumbai"
+	},
+	"thehindu": {
+		"link": "https://www.thehindu.com/news/cities/mumbai/"
+	},
+    "ndtv": {
+    "link": "https://www.ndtv.com/mumbai-news"
+	},
+    "hindustantimes": {
+	"link": "https://www.hindustantimes.com/mumbai-news/"
+	}
+}
