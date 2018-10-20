@@ -10,9 +10,15 @@ with open(PROJECT_ROOT + '/scraping/data/scraped_articles.json') as fp:
 
 inp_value = ''
 def home(request):
+    blaze = dict()
+    with open(PROJECT_ROOT + '/scraping/data/return.json') as f:
+        blaze = json.load(f)
     context = {
-        'articles': articles
+        'articles': articles,
+        'url': blaze
     }
+    print('Enter the url, mannn')
+    print(context)
     try:
         inp_value = request.GET['news']
         with open('url.txt', 'w') as file:

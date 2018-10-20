@@ -35,7 +35,7 @@ else:
 data['verdict'] = verdict
 data['probability'] = prob
 
-print(data)
+# print(data)
 PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
 with open(PROJECT_ROOT+'/scraping/data/return.json', 'w') as fp:
     json.dump(data, fp, indent = 4, sort_keys = True)
