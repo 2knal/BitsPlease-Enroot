@@ -1,7 +1,5 @@
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-
+{% extends "app/base.html" %}
+{% block content %}
               <div class="resultcard" style="width: 30rem; ">
                 <img class="card-img-top" src="..." alt="Card image cap">
                 <div class="card-body" >
@@ -10,8 +8,6 @@
                   <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
-          
-           
               <div class="resultcard" style="width: 30rem;">
                     <img class="card-img-top" src="..." alt="Card image cap">
                     <div class="card-body">
@@ -21,3 +17,4 @@
                     </div>
                
                 </div>
+{% endblock content %}              
