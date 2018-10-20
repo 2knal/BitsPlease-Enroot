@@ -36,6 +36,6 @@ with open(PROJECT_ROOT + 'app/scraping/data/scraped_articles.json', 'r') as file
     print(something)
 # with open(PROJECT_ROOT + 'app/scraping/data/scraped_articles.json', 'w') as file:
 #     json.dump(data, file, indent = 4, sort_keys = True)
-with open('app/scraping/data/scraped_articles.json', 'w') as fp:
+with open(PROJECT_ROOT+'app/scraping/data/scraped_articles.json', 'w') as fp:
     json.dump(something, fp, indent = 4, sort_keys = True)
     print('Fuck Yeah!')
