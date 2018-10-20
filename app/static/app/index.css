@@ -4,12 +4,10 @@ font-size: 20px;
 color: white;
 }
 
-
 .navbar-brand {
     padding: 0 15px;
     height: 80px;
     line-height: 80px;
-
   }
   .resultcard {
     min-height: 325px;
@@ -64,12 +62,13 @@ color: white;
     font-size: 25px;
     color: #818181;
     display: block;
-    transition: 0.3s;
+    transition: 0.1s;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-    color: #f1f1f1;
+    color: #111111;
+    cursor: pointer;
 }
 
 /* Position and style the close button (top right corner) */
@@ -79,6 +78,11 @@ color: white;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+}
+
+
+.sidenav .closebtn:hover {
+    color: red;
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
@@ -91,4 +95,16 @@ color: white;
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+}
+
+.fa{
+  cursor: pointer;
+}
+
+.sidelinks{
+  transition: 0.25s;
+}
+
+.sidelinks:hover{
+  background-color: #FFFFFF;  
 }
