@@ -24,50 +24,28 @@
                 </button> -->
 
               <div id="mySidenav" class="sidenav">
-<<<<<<< HEAD
-              <a class="closebtn" onclick="closeNav()">&times;</a>
-              <ul class="list-unstyled">
-                <li class="sidelinks">
-                  <a class="" href="{% url 'app_home' %}">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="sidelinks">
-                  <a class="" href="{% url 'login' %}">Login</a>
-                </li>
-                <li class="sidelinks">
-                  <a class="" href="{% url 'register' %}">Sign up</a>
-                </li>
-                <li class="sidelinks">
-                  <a class="" href="#">Fake news detector</a>
-                </li>
-              </ul> 
-              </div>
-
-              <div class="collapse navbar-collapse" id="navbarSupportedContent" style="float: right;">
-                    <form class="form-inline my-2 my-lg-0"  >
-                      <input class="form-control mr-sm-2" type="search" placeholder="Search news" aria-label="Search">
-=======
               <a  class="closebtn" onclick="closeNav()">&times;</a>
-              <ul class="">
-                    <li class="">
+              <ul class=" list-unstyled">
+                    <li class="sidelinks">
                       <a class="" href="{% url 'app_home' %}">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="">
+                    <li class="sidelinks">
                         <a class="" href="{% url 'profile'%}">Profile</a>
                     </li>
 
                         {% if user.is_authenticated %}
-                        <li class="">
+                        <li class="sidelinks">
                           <a class="" href="{% url 'logout' %}">Logout</a>
                         </li>
                         {% else %}
-                         <li class="">
+                         <li class="sidelinks">
                             <a class="" href="{% url 'register' %}">Sign up</a>
                           </li>
-                          <li class="">
+                          <li class="sidelinks">
                               <a class="" href="{% url 'login' %}">Login</a>
                           </li>
                         {% endif %}
-                        <li class="">
+                        <li class="sidelinks">
                             <a class="" href="#">Fake news detector</a>
                         </li>
                   </ul> </div>
@@ -103,7 +81,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-<<<<<<< HEAD
 <script type="text/javascript">
   /* Set the width of the side navigation to 250px */
 function openNav() {
@@ -114,27 +91,7 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
-=======
-    <script type="text/javascript">
-      /* Set the width of the side navigation to 250px */
-    function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-    }
-
-    /* Set the width of the side navigation to 0 */
-    function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-    }
     </script>
-
-<<<<<<< HEAD
-=======
-    <style type="text/css">
-
-
-    </style>
->>>>>>> f7445898d76b94cc67d0b643fd879f4466a1251d
->>>>>>> fe0c97844c2e3444f6049ac268c15e9bdca48a8c
 
 /*
 var modal = getElementById("mySidenav");
