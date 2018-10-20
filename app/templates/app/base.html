@@ -29,17 +29,22 @@
                     <li class="">
                       <a class="" href="{% url 'app_home' %}">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="">
-                      <a class="" href="{% url 'login' %}">Login</a>
-                    </li>
-                    <li class="">
+                    
+                        {% if user.is_authenticated %}
+                        <li class="">
+                          <a class="" href="{% url 'logout' %}">Logout</a>
+                        </li>
+                        {% else %}
+                         <li class="">
                             <a class="" href="{% url 'register' %}">Sign up</a>
                           </li>
-                    <li class="">
-                            <a class="" href="#">Fake news detector</a>
+                          <li class="">
+                              <a class="" href="{% url 'login' %}">Login</a>
                           </li>
-
-
+                        {% endif %}
+                        <li class="">
+                            <a class="" href="#">Fake news detector</a>
+                        </li>
                   </ul> </div>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent" style="float: right;">
