@@ -1,7 +1,13 @@
 {% extends "app/base.html" %}
 {% block content %}
 
-            
+<div id="shift">
+      <form class="form-inline my-2 my-lg-0" style="padding-top: 50px;margin-left: 375px" >
+      <input class="form-control mr-sm-2" type="search" placeholder="Enter URl of the News" aria-label="Enter" style="width: 600px" name = "news">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+</div>
+
 <div class="row" style="padding: 10px;padding-left: 20px;padding-bottom: 20px" id="home">
 
           <div class="resultcard" style="width:300px;height: 300px;margin-left: 30px ">
@@ -14,7 +20,7 @@
                   <button class="btn btn-primary" onclick="document.getElementById('pop1').style.display ='block' ">Go somewhere</button>
                 </div>
               </div>
-         
+
 
             <div class="resultcard"  style="width:300px;height: 300px;margin-left: 30px ">
                     <img class="card-img-top" src="..." alt="Card image cap">
@@ -24,7 +30,7 @@
                       <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                   </div>
-              
+
 
              <div class="resultcard"  style="width:300px;height: 300px;margin-left: 30px ">
                     <img class="card-img-top" src="..." alt="Card image cap">
@@ -34,12 +40,12 @@
                       <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                   </div>
-            
 
 
-             
 
-  <div class="row" style="padding: 10px">  
+
+
+  <div class="row" style="padding: 10px">
                 <div class="resultcard"  style="width:300px;height: 300px ">
 
                     <img class="card-img-top" src="..." alt="Card image cap">
@@ -49,8 +55,8 @@
                       <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                   </div>
-                
-                
+
+
 
                 <div class="resultcard"  style="width:300px;height: 300px;margin-left: 30px ">
                     <img class="card-img-top" src="..." alt="Card image cap">
@@ -61,7 +67,7 @@
                     </div>
                   </div>
 
-                
+
                 <div class="resultcard"  style="width:300px;height: 300px;margin-left: 30px ">
                     <img class="card-img-top" src="..." alt="Card image cap">
                     <div class="card-body">
@@ -73,7 +79,7 @@
 
 </div>
           <div id = 'pop1' class = 'pop-up'>
-           
+
            <div class = 'modal-content' style = "display:block;">
            <div><span onclick="document.getElementById('pop1').style.display='none'" class = 'close mr-3 mt-1'>&times; </span></div>
             <div class = 'mt-4'>
@@ -82,7 +88,7 @@
 
             </div>
             </div>
-           </div>               
-          </div>     
-                
-{% endblock content %}              
+           </div>
+          </div>
+
+{% endblock content %}
