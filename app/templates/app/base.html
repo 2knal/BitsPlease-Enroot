@@ -15,7 +15,7 @@
 <body>
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
-                        <i class = "fa fa-bars fa-2x mr-3 ml-3" onclick="openNav()"></i>
+                        <i id = "sideopen" class = "fa fa-bars fa-2x mr-3 ml-3" onclick="openNav()"></i>
 
                     <span style="float: center;"> NewsBuster </span>
 
@@ -24,29 +24,28 @@
                 </button> -->
 
               <div id="mySidenav" class="sidenav">
-              <a  class="closebtn" onclick="closeNav()">&times;</a>
-              <ul class="">
-                    <li class="">
-                      <a class="" href="{% url 'app_home' %}">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="">
-                      <a class="" href="{% url 'login' %}">Login</a>
-                    </li>
-                    <li class="">
-                            <a class="" href="{% url 'register' %}">Sign up</a>
-                          </li>
-                    <li class="">
-                            <a class="" href="#">Fake news detector</a>
-                          </li>
+              <a class="closebtn" onclick="closeNav()">&times;</a>
+              <ul class="list-unstyled">
+                <li class="sidelinks">
+                  <a class="" href="{% url 'app_home' %}">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="sidelinks">
+                  <a class="" href="{% url 'login' %}">Login</a>
+                </li>
+                <li class="sidelinks">
+                  <a class="" href="{% url 'register' %}">Sign up</a>
+                </li>
+                <li class="sidelinks">
+                  <a class="" href="#">Fake news detector</a>
+                </li>
+              </ul> 
+              </div>
 
-
-                  </ul> </div>
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="float: right;">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent" style="float: right;">
                     <form class="form-inline my-2 my-lg-0"  >
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search news" aria-label="Search">
+                      <input class="form-control mr-sm-2" type="search" placeholder="Search news" aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit" >Search</button>
-                  </form>
+                    </form>
 
               </div>
               </nav>
@@ -65,19 +64,21 @@
 <script type="text/javascript">
   /* Set the width of the side navigation to 250px */
 function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("mySidenav").style.width = "300px";
 }
 
 /* Set the width of the side navigation to 0 */
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
+
+/*
+var modal = getElementById("mySidenav");
+window.onclick = function(event) {
+    if (event.currentTarget == modal) {
+      closeNav();
+    }
+    */
 </script>
-
-<style type="text/css">
-
-
-</style>
-
 </body>
 </html>
