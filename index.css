@@ -1,0 +1,41 @@
+nav{
+height:  80px;
+font-size: 20px;
+color: white;
+}
+.navbar-brand {
+    padding: 0 15px;
+    height: 80px;
+    line-height: 80px;
+  }
+  .resultcard {
+    min-height: 325px;
+    width: 30%;
+    margin: 1.5%;
+    background-color: var(--color-white-dark);
+    position: relative;
+    transition: all .3s;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.5); }
+    .resultcard:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3); }
+    .resultcard:active {
+      transform: translateY(-1px);
+      box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3); }
+    .resultcard__img {
+      width: 90%;
+      height: 150px;
+      display: inline-block;
+      margin: 1rem 5%; }
+    .resultcard__heading {
+      padding: 0 2rem 0 2rem;
+      font-size: 2rem; }
+    .resultcard__source {
+      position: absolute;
+      bottom: .5rem;
+      right: .5rem;
+      text-align: right;
+      padding: 2rem; }
+
