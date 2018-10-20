@@ -5,14 +5,14 @@
 <div class="row" style="padding: 10px;padding-left: 20px;padding-bottom: 20px" id="home">
 
   {% for article in articles %}
-    <div class="resultcard" style="width:300px;height: 340px;margin-left: 30px ">
+    <div class="resultcard" style="width:300px;height: 350px;margin-left: 30px ">
                 <div >
                 <img style="width:300px;height: 175px;" class="card-img-top" src={{ article.image }} alt="Card image cap" >
                 </div>
 
                 <div class="card-body" >
                   <h5 class="card-title">{{ article.title }}</h5>
-                  <button class="btn btn-primary" onclick="document.getElementById('pop1').style.display ='block' ">Go somewhere</button>
+                  <button class="btn btn-primary" onclick="document.getElementById('pop1').style.display ='block' ">Know more</button>
                 </div>
               </div>
 {% endfor %}
