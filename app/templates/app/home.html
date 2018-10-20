@@ -4,17 +4,16 @@
             
 <div class="row" style="padding: 10px">
 
-          <div class="resultcard" style="width:300px;height: 300px ">
+          <div class="resultcard" style="width:300px;height: 300px;border-style: solid;">
 
                 <img class="card-img-top" src="..." alt="Card image cap">
                 <div class="card-body" >
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <button class="btn btn-primary" onclick="document.getElementById('pop1').style.display ='block' ">Go somewhere</button>
                 </div>
               </div>
-            
-          
+         
 
             <div class="resultcard"  style="width:300px;height: 300px ">
                     <img class="card-img-top" src="..." alt="Card image cap">
@@ -38,7 +37,7 @@
  </div>
 
              
-        <div class="row" style="padding: 10px">  
+  <div class="row" style="padding: 10px">  
                 <div class="resultcard"  style="width:300px;height: 300px ">
                     <img class="card-img-top" src="..." alt="Card image cap">
                     <div class="card-body">
@@ -70,8 +69,17 @@
                   </div>
 
 </div>
-                </li>
-              </ul>
-               
+          <div id = 'pop1' class = 'pop-up'>
+           
+           <div class = 'modal-content' style = "display:block;">
+           <div><span onclick="document.getElementById('pop1').style.display='none'" class = 'close mr-3 mt-1'>&times; </span></div>
+            <div class = 'mt-4'>
+            <div>
+              Some text comes here...
+
+            </div>
+            </div>
+           </div>               
+          </div>     
                 
 {% endblock content %}              
