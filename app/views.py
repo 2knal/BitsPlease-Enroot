@@ -2,16 +2,16 @@ from django.shortcuts import render
 from django.http import HttpResponse
 import os, subprocess, json
 
-something = []
+articles = []
 PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
 with open(PROJECT_ROOT + '/scraping/data/scraped_articles.json') as fp:
     data = json.load(fp)
-    something = data['articles']
+    articles = data['articles']
 
 inp_value = ''
 def home(request):
     context = {
-        'articles': something
+        'articles': articles
     }
     inp_value = str(request.GET['news'])
     with open('url.txt', 'w') as file:
@@ -23,6 +23,7 @@ def home(request):
     output = script(request)
     ml = train(request)
     userthingy = test(request)
+
     return render(request, 'app/home.html', context)
 
 def script(request):

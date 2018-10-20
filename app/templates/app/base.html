@@ -51,8 +51,61 @@
                               <a class="" href="{% url 'login' %}">Login</a>
                           </li>
                         {% endif %}
-                        <li class="sidelinks">
-                            <a class="" href="#">Fake news detector</a>
+                        <li class="sidelinks" style="cursor: pointer;">
+
+
+
+                            <style type="text/css">.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+
+
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFFFFF;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-conten a:hover {background-color: #ddd;}
+
+.sidelinks:hover .dropdown-content {display: block;
+background-color: #f1f1f1;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+  </style>
+  <div class="dropdown" style="cursor: pointer;">
+   <a class=".dropbtn" href="" >Search</a>
+  <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
                         </li>
                   </ul> </div>
 
@@ -73,15 +126,7 @@
         {% block content %}
         {% endblock content%}
 
-
-}
-
-
     </div>
-
-<style type="text/css">
-
-</style>
 
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
