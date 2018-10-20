@@ -115,21 +115,3 @@ color: white;
   background-color: #FFFFFF;  
 }
 
-
-.hamburger {
-  cursor: pointer;
-  padding: 15px 10px 15px 0;
-  display: block;
-  float: right;
-  margin-top: 15px;
-  color: (256,0,0);
-}
-.menu{
-  height: 0;
-  overflow: hidden;
-  transition: height 0.3s;
-}
-
-.open{
-  height: 295px;
-}

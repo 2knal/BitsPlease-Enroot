@@ -12,4 +12,7 @@ if __name__ == '__main__':
             "available on your PYTHONPATH environment variable? Did you "
             "forget to activate a virtual environment?"
         ) from exc
+    # PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
+    # print(PROJECT_ROOT)
+    # exec(open(PROJECT_ROOT + '/app/scraping/NewsScraper.py').read())
     execute_from_command_line(sys.argv)
