@@ -9,7 +9,7 @@ import os.path
 # http://www.sahalnews.com/wp-content/uploads/2014/12/news-update-.jpg
 
 # Set the limit for number of articles to download
-LIMIT = 6
+LIMIT = 4
 
 data = {}
 data['articles'] = []

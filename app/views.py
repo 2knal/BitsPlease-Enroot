@@ -2,21 +2,22 @@ from django.shortcuts import render
 from django.http import HttpResponse
 import os, subprocess, json
 
-something = []
+articles = []
 PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
 with open(PROJECT_ROOT + '/scraping/data/scraped_articles.json') as fp:
     data = json.load(fp)
-    something = data['articles']
+    articles = data['articles']
 
 
 def home(request):
     context = {
-        'articles': something
+        'articles': articles
     }
-    print(something)
+    #print(something)
     output = script(request)
     ml = train(request)
     userthingy = test(request)
+    
     return render(request, 'app/home.html', context)
 
 def script(request):
