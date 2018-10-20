@@ -12,12 +12,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="{% static 'app/index.css' %}">
 </head>
-<body id="x">
+<body >
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
                         <i class = "fa fa-bars fa-2x mr-3 ml-3" onclick="openNav()"></i>
 
-                    <span style="float: center;"> NewsBuster </span>
+                    <span style="margin-left: 500px"> NewsBuster </span>
 
                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -47,19 +47,22 @@
                         </li>
                   </ul> </div>
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="float: right;">
-                    <form class="form-inline my-2 my-lg-0"  >
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search news" aria-label="Search">
+                    
+              </nav>
+              <div >
+                    <form class="form-inline my-2 my-lg-0" style="padding-top: 50px;margin-left: 450px">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search news" aria-label="Search" style="width: 600px">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit" >Search</button>
                   </form>
 
               </div>
-              </nav>
 
               <br>
     <div class="container">
         {% block content %}
         {% endblock content%}
+
+
     </div>
 
 
@@ -79,10 +82,6 @@ function closeNav() {
 }
 </script>
 
-<style type="text/css">
-
-
-</style>
 
 </body>
 </html>
