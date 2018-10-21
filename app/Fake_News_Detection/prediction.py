@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import pickle, os, json
-import pyphi
+# import pyphi
 #function to run for prediction
 def detecting_fake_news(var):
 #retrieving the best model for prediction
