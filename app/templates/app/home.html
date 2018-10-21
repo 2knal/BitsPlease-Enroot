@@ -18,24 +18,53 @@
 
                 <div class="card-body" >
                   <h5 class="card-title">{{ article.title }}</h5>
-                  <button class="btn btn-primary" onclick="document.getElementById('pop1').style.display ='block' ">Go somewhere</button>
+                  <button class="btn btn-primary showmore">Go somewhere</button>
                 </div>
               </div>
-{% endfor %}
 
+              {% endfor %}
 </div>
-
-          <div id = 'pop1' class = 'pop-up'>
-
+{% for article in articles %}
+          <div class = 'popup'>
+ 
            <div class = 'modal-content' style = "display:block;">
-           <div><span onclick="document.getElementById('pop1').style.display='none'" class = 'close mr-3 mt-1'>&times; </span></div>
+           <div><span onclick="$('.popup').hide(); " class = 'close mr-3 mt-1'>&times; </span></div>
             <div class = 'mt-4'>
             <div>
-
-              This is a sentence
+              <h5 class=""> {{ article.summary }}</h5>
+             
 
             </div>
             </div>
            </div>
           </div>
+        
+          {% endfor %}
+          <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+          <script>
+            $(document).ready(function(){
+              for( i = 1; i< 5; i++)
+              {
+                document.getElementsByClassName('showmore')[i-1].id="btn1" + i;
+                document.getElementsByClassName('popup')[i-1].id = "popout" + i;
+
+              }
+              $("#btn11").on("click", function(){
+                $("#popout1").show();
+              
+              });
+              $("#btn12").on("click", function(){
+                $("#popout2").show();
+              
+              });
+              $("#btn13").on("click", function(){
+                $("#popout3").show();
+              
+              });
+              $("#btn14").on("click", function(){
+                $("#popout4").show();
+              
+              });
+            });
+            </script>
 {% endblock content %}

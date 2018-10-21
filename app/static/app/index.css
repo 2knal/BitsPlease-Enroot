@@ -115,7 +115,7 @@ color: white;
   background-color: #FFFFFF;  
 }
 
-.pop-up {
+.popup {
     display:none; 
     position: fixed; 
     z-index: 1; 
