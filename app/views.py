@@ -10,6 +10,8 @@ with open(PROJECT_ROOT + '/scraping/data/scraped_articles.json') as fp:
 
 inp_value = ''
 def home(request):
+    output = script(request)
+    ml = train(request)
     try:
         inp_value = request.GET['news']
         if inp_value != '':
@@ -31,8 +33,7 @@ def home(request):
     # print(type(request.GET['news']))
     # print(inp_value)
     # print(something)
-    # output = script(request)
-    # ml = train(request)
+
 
 
     return render(request, 'app/home.html', context)
