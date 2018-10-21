@@ -47,13 +47,13 @@
 ------------------------------------------
 ### Contributing
 
- We're are open to `enhancements` & `bug-fixes` :smile: Also do have a look [here](./CONTRIBUTING.md)
+ We're are open to `enhancements` & `bug-fixes` :smile: Also do have a look [here](./CONTRIBUTING.md).
 
 -------------------------------------------
 
 ### Note
 
-- This project was done under `24 hours with no pre-preparation`
+- This project was done under `24 hours with no pre-preparation`.
 
 ------------------------------------------
 ### Contributors
