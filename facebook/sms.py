@@ -27,8 +27,10 @@ class EchoBot(Client):
             elif message_object.text==tomato1.text:
                 for i in data['articles']:
                     tomato=Message(text=i['title']) 
+                    
                     self.send(tomato, thread_id=thread_id, thread_type=thread_type)
                     self.sendRemoteFiles(i['image'], message=None, thread_id=thread_id, thread_type=thread_type)
+                    self.send(Message(text="% Reality of news="+str(i['probability'])), thread_id=thread_id, thread_type=thread_type)
 
             elif message_object.text==Message(text = '1').text:
                 self.send(Message(text = data['articles'][0]['summary']), thread_id=thread_id, thread_type=thread_type)
