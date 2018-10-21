@@ -9,6 +9,8 @@ with open(PROJECT_ROOT + '/scraping/data/scraped_articles.json') as fp:
     articles = data['articles']
 inp_value = ''
 def home(request):
+    output = script(request)
+    ml = train(request)
     try:
         inp_value = request.GET['news']
         if inp_value != '':
@@ -17,22 +19,21 @@ def home(request):
     except:
         print('something')
     userthingy = test(request)
-
     blaze = dict()
     with open(PROJECT_ROOT + '/scraping/data/return.json') as f:
         blaze = json.load(f)
+        print(blaze)
     context = {
         'articles': articles,
         'url': blaze
     }
     print('Enter the url, mannn')
     print(context)
-
     # print(type(request.GET['news']))
     # print(inp_value)
     # print(something)
-    # output = script(request)
-    # ml = train(request)
+
+
 
     return render(request, 'app/home.html', context)
 

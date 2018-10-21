@@ -1,8 +1,8 @@
 {% extends "app/base.html" %}
 {% load crispy_forms_tags %}
 {% block content %}
-    <div class="content-section">
-        <form id="my_form" method="POST">
+    <div class="content-section"  id="my_form" >
+        <form  method="POST">
             {% csrf_token %}
             <fieldset class="form-group">
                 <legend class="border-bottom mb-4">Join Today</legend>
@@ -12,7 +12,7 @@
                 <button class="btn btn-outline-info" type="submit">Sign Up</button>
             </div>
         </form>
-        <div class="border-top pt-3">
+        <div class="border-top pt-3"  id="my_form" >
             <small class="text-muted">
                 Already Have An Account? <a class="ml-2" href="{% url 'login' %}">Sign In</a>
             </small>
