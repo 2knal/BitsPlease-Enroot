@@ -27,6 +27,13 @@
 
 - Facebook messenger integration, so that users can get the latest authentic news right on their cellphone.
 
+
+<h3 > Facebook Integration </h3>
+<br>
+<p align="center">
+<img src ="./assets/ezgif.com-video-to-gif.gif" width = 300px>
+</p>
+
 ------------------------------------------
 
 ### Add-Ons
