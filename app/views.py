@@ -8,16 +8,30 @@ with open(PROJECT_ROOT + '/scraping/data/scraped_articles.json') as fp:
     data = json.load(fp)
     articles = data['articles']
 
-
+inp_value = ''
 def home(request):
+    blaze = dict()
+    with open(PROJECT_ROOT + '/scraping/data/return.json') as f:
+        blaze = json.load(f)
     context = {
-        'articles': articles
+        'articles': articles,
+        'url': blaze
     }
-    #print(something)
-    output = script(request)
-    ml = train(request)
+    print('Enter the url, mannn')
+    print(context)
+    try:
+        inp_value = request.GET['news']
+        with open('url.txt', 'w') as file:
+            file.write(str(inp_value))
+    except:
+        print('something')
+    # print(type(request.GET['news']))
+    # print(inp_value)
+    # print(something)
+    # output = script(request)
+    # ml = train(request)
     userthingy = test(request)
-    
+
     return render(request, 'app/home.html', context)
 
 def script(request):
