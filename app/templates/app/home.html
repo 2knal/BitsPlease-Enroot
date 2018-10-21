@@ -4,9 +4,11 @@
 <div id="shift">
       <form class="form-inline my-2 my-lg-0" style="padding-top: 50px;margin-left: 150px" >
       <input class="form-control mr-sm-2" type="search" placeholder="Enter URl of the News" aria-label="Enter" style="width: 600px" name = "news">
+      <span>
       <button class="btn btn-outline-success my-2 my-sm-0 " type="submit" 
       onclick="">Compile</button>
       <button class="btn btn-outline-success btn_21">Search</button>
+      </span>
       </form>
 </div>
 
@@ -19,7 +21,8 @@
             <div>
               <h1>{{ url.title }}</h1>
               <h5 class=""> {{url.probability}} </h5>
-              <h5> {{ url.summary }}</h5>
+              <h5> {{url.verdict}}</h5>
+              <h6> {{ url.summary }}</h6>
               <a href={{ url.link }} >
                 <button class="btn btn-outline-success"
               >Go to Article</button>
@@ -54,7 +57,11 @@
            <div><span  style="float: left;" onclick="$('.popup').hide(); " class = 'close mr-3 mt-1'>&times; </span></div>
             <div class = 'mt-4'>
             <div>
-              <h4 class=""> {{ article.summary }}</h4>
+              <h2> {{ article.title }} </h2>
+              <br>
+              <h5 class=""> {{ article.summary }}</h5>
+              <h5> Authenticity of news : {{article.probability}}</h5>
+              <h5> {{article.verdict}}</h5>
               <a href={{ article.link }} >
                 <button class="btn btn-outline-success"
               >Go to Article</button>
@@ -106,5 +113,7 @@
                 $(".popup_user").show();
               });
             });
+
+
             </script>
 {% endblock content %}

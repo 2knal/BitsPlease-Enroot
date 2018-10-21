@@ -140,13 +140,30 @@ color: white;
     background-color: rgba(0,0,0,0.6); 
 }
 .modal-content{
-    position: relative;
+    position: absolute;
+    margin:50px;
+    padding: 20px;
+    padding-right: 40px;
+    z-index: 1;
+    border: 10px solid #888;
+    border-color: green;
+    height: 90%;
+    width: 70%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 1s;
+    animation-name: animatetop;
+    animation-duration: 1s;
+}
+.modal-content1{
+    position: fixed;
     margin:100px;
     padding: 20px;
     padding-right: 40px;
     z-index: 1;
-    border: 1px solid #888;
-    height: 70%;
+    border: 10px solid #888;
+    border-color: red;
+    height: 90%;
     width: 70%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-animation-name: animatetop;
@@ -155,13 +172,14 @@ color: white;
     animation-duration: 1s;
 }
 
+
 @-webkit-keyframes animatetop {
-    from {top:-300px; opacity:0} 
-    to {top:-15px; opacity:1}
+    from {top:-350px; opacity:0} 
+    to {top:20px; opacity:5
 }
 @keyframes animatetop {
-    from {top:-300px; opacity:0}
-    to {top:-15px; opacity:1}
+    from {top:-350px; opacity:0}
+    to {top:20px; opacity:1}
 }
 
 .close{
