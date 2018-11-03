@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=300px src="./assets/Selection_013.png" alt="NewsBuster-logo"></a>
+ <img width=300px src="./assets/NewsBuster.png" alt="NewsBuster-logo"></a>
 </p>
 
 <h3 align="center">Fake-news Classifier</h3>
